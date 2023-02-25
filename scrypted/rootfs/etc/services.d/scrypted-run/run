@@ -18,8 +18,6 @@ else
     cp /etc/options.json /config/data_scrypted/
 fi
 
-DEFAULT_LEASE=$(bashio::config 'default_lease')
-
 for var in $(bashio::config 'env_vars|keys[]'); do
     name=$(bashio::config "env_vars[${var}].name")
     value=$(bashio::config "env_vars[${var}].value")
