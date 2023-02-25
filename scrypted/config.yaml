@@ -15,7 +15,7 @@ ingress_stream: true
 usb: true
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
-  SCRYPTED_DISABLE_AUTHENTICATION: true
+  SCRYPTED_DISABLE_AUTHENTICATION: "true"
 image: "ghcr.io/Mich-b/{arch}-ha-addon-scrypted"
 backup_exclude:
   - /server
