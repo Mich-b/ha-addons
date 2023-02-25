@@ -18,9 +18,11 @@ else
     cp /etc/options.json /config/data_scrypted/
 fi
 
-for var in $(hass.config.get 'env_vars|keys[]'); do
-    name=$(hass.config.get "env_vars[${var}].name")
-    value=$(hass.config.get "env_vars[${var}].value")
+DEFAULT_LEASE=$(bashio::config 'default_lease')
+
+for var in $(bashio::config 'env_vars|keys[]'); do
+    name=$(bashio::config "env_vars[${var}].name")
+    value=$(bashio::config "env_vars[${var}].value")
     hass.log.info "Setting ${name}"
     export "${name}=${value}"
 done
