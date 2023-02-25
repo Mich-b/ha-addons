@@ -22,6 +22,7 @@ backup_exclude:
   - /data/scrypted_data/recordings
 options:
   env_vars: []
+image: "ghcr.io/mich-b/{arch}-ha-addon-scrypted"
 schema:
   env_vars:
     - name: match(^SCRYPTED_([A-Z0-9_])+$)
