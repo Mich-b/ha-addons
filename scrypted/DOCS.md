@@ -7,15 +7,16 @@ For more information on Scrypted, please check out the [the Scrypted website](ht
 
 ```
 - name: "SCRYPTED_DISABLE_AUTHENTICATION"
-  value "false"
+  value: "false"
 - name: "SCRYPTED_ADMIN_TOKEN"
-  value "secret"
+  value: "secret"
 - name: "SCRYPTED_ADMIN_USER"
-  value "hassioingress"
+  value: "hassioingress"
 ```
 
 Note that `SCRYPTED_ADMIN_TOKEN` can then be used in ingress.conf to automatically authenticate all requests that originate from Home Assistant. 
 
 # Development information
-The file scrypted\rootfs\etc\services.d\scrypted-run\run contains the logic to export all env_vars. 
+The file scrypted\rootfs\etc\services.d\scrypted-run\run contains the logic to export all env_vars, since we need this when starting Scrypted. 
+The file scrypted\rootfs\etc\services.d\nginx\run contains the logic to export all env_vars, since we also need the token in an nginx config. 
 The config.yaml then contains env_vars as option. 

@@ -9,15 +9,6 @@ declare name
 declare value
 bashio::net.wait_for 10443
 
-for var in $(bashio::config 'env_vars|keys[]'); do
-    name=$(bashio::config "env_vars[${var}].name")
-    value=$(bashio::config "env_vars[${var}].value")
-    echo "setting \"${name}\";"
-    export "${name}=${value}"
-done
-
-sed -i "s/%%authorization_header%%/$SCRYPTED_ADMIN_TOKEN/g" /etc/nginx/servers/ingress.conf
-
 bashio::log.info "Starting NGinx..."
 
 exec nginx
