@@ -16,6 +16,6 @@ for var in $(bashio::config 'env_vars|keys[]'); do
     export "${name}=${value}"
 done
 
-sed -i "s/%%authorization_header%%/$SCRYPTED_ADMIN_TOKEN/g" /etc/nginx/servers/direct.conf
+sed -i "s/%%authorization_header%%/$SCRYPTED_ADMIN_TOKEN/g" /etc/nginx/servers/ingress.conf
 
 exec nginx
