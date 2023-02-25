@@ -9,15 +9,16 @@ arch:
   - armv7
 init: false
 ingress: true
-ingress_port: 0
 panel_icon: mdi:memory
 hassio_api: true
 ingress_stream: true
-host_network: true
 usb: true
-image: "ghcr.io/Mich-b/{arch}-ha-addon-scrypted"
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
+  SCRYPTED_DISABLE_AUTHENTICATION: true
+host_network: false
+ingress_port: 8099
+image: "ghcr.io/Mich-b/{arch}-ha-addon-scrypted"
 backup_exclude:
   - /server
   - /data/scrypted_data/recordings
