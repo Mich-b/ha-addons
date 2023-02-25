@@ -12,7 +12,7 @@ ingress: true
 panel_icon: mdi:memory
 hassio_api: true
 ingress_stream: true
-ingress_port: 11080
+host_network: true
 usb: true
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
