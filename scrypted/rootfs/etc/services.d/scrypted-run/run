@@ -21,7 +21,6 @@ fi
 for var in $(bashio::config 'env_vars|keys[]'); do
     name=$(bashio::config "env_vars[${var}].name")
     value=$(bashio::config "env_vars[${var}].value")
-    echo "setting \"${name}\";"
     export "${name}=${value}"
 done
 
