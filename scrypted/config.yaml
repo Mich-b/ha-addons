@@ -16,7 +16,7 @@ usb: true
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
   SCRYPTED_DISABLE_AUTHENTICATION: "true"
-image: "ghcr.io/Mich-b/{arch}-ha-addon-scrypted"
+image: "ghcr.io/mich-b/{arch}-ha-addon-scrypted"
 backup_exclude:
   - /server
   - /data/scrypted_data/recordings
