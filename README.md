@@ -4,7 +4,10 @@
 Repository for my custom add-ons. Add to your Home Assistant by clicking the button above.
 
 ## Scrypted
-Based on https://github.com/aegjoyce/ha-addons . However, this is an ingress-only version of Scrypted: no host networking enabled, meaning the add-on is only reachable from within home-assistant. Scrypted authentication is disabled since we rely on authentication of Homeassistant. 
+Based on https://github.com/aegjoyce/ha-addons . 
+
+This adds a fixed authentication header so that all access via ingress is automatically authenticated. 
+I initially disabled host networking and disabled Scrypted authentication, but that caused problems with WebRTC and STUN. 
 
 ![aarch64-support](https://img.shields.io/badge/aarch64-yes-blue.svg)
 ![aarch64-version](https://ghcr-badge.deta.dev/Mich-b/aarch64-ha-addon-scrypted/latest_tag?trim=major&label=latest)

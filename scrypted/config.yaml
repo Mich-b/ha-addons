@@ -13,11 +13,18 @@ panel_icon: mdi:memory
 hassio_api: true
 ingress_stream: true
 host_network: true
+ingress_port: 0
 usb: true
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
-  SCRYPTED_DISABLE_AUTHENTICATION: "true"
+  SCRYPTED_DISABLE_AUTHENTICATION: "false"
 image: "ghcr.io/mich-b/{arch}-ha-addon-scrypted"
 backup_exclude:
   - /server
   - /data/scrypted_data/recordings
+options:
+  env_vars: []
+schema:
+  env_vars:
+    - name: str
+      value: str
