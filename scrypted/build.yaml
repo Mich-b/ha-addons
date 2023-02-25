@@ -5,6 +5,6 @@ build_from:
 labels:
   org.opencontainers.image.title: "Scrypted Add-on for Home Assistant"
   org.opencontainers.image.description: "A home automation platform powered by node.js"
-  org.opencontainers.image.source: "https://github.com/aegjoyce/ha-addons"
+  org.opencontainers.image.source: "https://github.com/Mich-b/ha-addons"
   org.opencontainers.image.licenses: "Apache"
   org.opencontainers.image.version: "v0.6.22"

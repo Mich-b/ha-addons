@@ -15,7 +15,7 @@ hassio_api: true
 ingress_stream: true
 host_network: true
 usb: true
-image: "ghcr.io/aegjoyce/{arch}-ha-addon-scrypted"
+image: "ghcr.io/Mich-b/{arch}-ha-addon-scrypted"
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
 backup_exclude:
