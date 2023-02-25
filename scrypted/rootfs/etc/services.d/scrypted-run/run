@@ -21,7 +21,7 @@ fi
 for var in $(bashio::config 'env_vars|keys[]'); do
     name=$(bashio::config "env_vars[${var}].name")
     value=$(bashio::config "env_vars[${var}].value")
-    hass.log.info "Setting ${name}"
+    echo "setting \"${name}\";"
     export "${name}=${value}"
 done
 
