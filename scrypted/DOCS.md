@@ -10,7 +10,7 @@ For more information on Scrypted, please check out the [the Scrypted website](ht
   value: "false"
 - name: "SCRYPTED_ADMIN_TOKEN"
   value: "secret"
-- name: "SCRYPTED_ADMIN_USER"
+- name: "SCRYPTED_ADMIN_USERNAME"
   value: "hassioingress"
 ```
 

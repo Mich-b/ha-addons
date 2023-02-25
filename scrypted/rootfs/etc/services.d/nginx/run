@@ -5,8 +5,6 @@
 # ==============================================================================
 
 # Wait for the Scrypted service to become available
-declare name
-declare value
 bashio::net.wait_for 10443
 
 bashio::log.info "Starting NGinx..."

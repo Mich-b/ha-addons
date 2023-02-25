@@ -11,5 +11,7 @@ server {
     location / {
         access_by_lua_file /etc/nginx/lua/ha-auth.lua;
         proxy_pass http://backend;
+        proxy_set_header Authorization "Bearer %%authorization_header%%";
+        proxy_pass_header Authorization;
     }
 }
