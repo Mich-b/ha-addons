@@ -10,12 +10,23 @@ declare value
 bashio::net.wait_for 10443
 
 bashio::log.info "Starting NGinx..."
+
 for var in $(bashio::config 'env_vars|keys[]'); do
     name=$(bashio::config "env_vars[${var}].name")
     value=$(bashio::config "env_vars[${var}].value")
+    bashio::log.info "Setting ${name} to ${value} in nginx run" 
     export "${name}=${value}"
 done
 
-sed -i "s/%%authorization_header%%/$SCRYPTED_ADMIN_TOKEN/g" /etc/nginx/servers/ingress.conf
+
+if [[ ! -v SCRYPTED_ADMIN_TOKEN || -z "$DEPLOY_ENV"  ]]; 
+then
+    bashio::log.info "No SCRYPTED_ADMIN_TOKEN setting found, removing proxy_pass_header config."
+    sed -i "s/.*Authorization.*//g" /etc/nginx/servers/ingress.conf
+else
+    bashio::log.info "SCRYPTED_ADMIN_TOKEN setting found, adding proxy_pass_header config." 
+    sed -i "s/%%authorization_header%%/$SCRYPTED_ADMIN_TOKEN/g" /etc/nginx/servers/ingress.conf
+fi
+
 
 exec nginx
