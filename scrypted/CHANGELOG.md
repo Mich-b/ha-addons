@@ -4,6 +4,78 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 but this project does not adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.7.35] - 2023-03-26
+### Changed
+- Update base image to v0.7.35
+
+## [v0.7.33] - 2023-03-26
+### Changed
+- Update base image to v0.7.33
+
+## [v0.7.29] - 2023-03-25
+### Changed
+- Update base image to v0.7.29
+
+## [v0.7.28] - 2023-03-25
+### Changed
+- Update base image to v0.7.28
+
+## [v0.7.26] - 2023-03-23
+### Changed
+- Update base image to v0.7.26
+
+## [v0.7.24] - 2023-03-22
+### Changed
+- Update base image to v0.7.24
+
+## [v0.7.23] - 2023-03-21
+### Changed
+- Update base image to v0.7.23
+
+## [v0.7.17] - 2023-03-18
+### Changed
+- Update base image to v0.7.17
+
+## [v0.7.16] - 2023-03-18
+### Changed
+- Update base image to v0.7.16
+
+## [v0.7.15] - 2023-03-18
+### Changed
+- Update base image to v0.7.15
+
+## [v0.7.14] - 2023-03-18
+### Changed
+- Update base image to v0.7.14
+
+## [v0.7.13] - 2023-03-18
+### Changed
+- Update base image to v0.7.13
+
+## [v0.7.11] - 2023-03-17
+### Changed
+- Update base image to v0.7.11
+
+## [v0.7.10] - 2023-03-16
+### Changed
+- Update base image to v0.7.10
+
+## [v0.7.9] - 2023-03-15
+### Changed
+- Update base image to v0.7.9
+
+## [v0.7.8] - 2023-03-15
+### Changed
+- Update base image to v0.7.8
+
+## [v0.7.7] - 2023-03-15
+### Changed
+- Update base image to v0.7.7
+
+## [v0.6.26] - 2023-02-28
+### Changed
+- Update base image to v0.6.26
+
 ## [v0.6.24] - 2023-02-25
 ### Changed
 - Update base image to v0.6.24
