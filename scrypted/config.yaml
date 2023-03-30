@@ -1,5 +1,5 @@
 name: "Cameras (Scrypted)"
-version: "v0.7.39"
+version: "v0.7.40"
 slug: scrypted
 description: A home automation platform powered by node.js
 url: "https://github.com/koush/scrypted"
