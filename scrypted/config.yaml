@@ -1,4 +1,4 @@
-name: "Cameras (Scrypted)"
+name: "Cameras"
 version: "v0.7.42"
 slug: scrypted
 description: A home automation platform powered by node.js
