@@ -18,8 +18,7 @@ usb: true
 environment:
   SCRYPTED_VOLUME: "/data/scrypted_data"
 backup_exclude:
-  - /server
-  - /data/scrypted_data/recordings
+  - '*/data/scrypted_data/recordings/*'
 options:
   env_vars: []
 image: "ghcr.io/mich-b/{arch}-ha-addon-scrypted"
