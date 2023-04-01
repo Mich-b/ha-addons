@@ -12,6 +12,7 @@ ingress: true
 panel_icon: mdi:memory
 hassio_api: true
 ingress_stream: true
+ingress_entry: "/endpoint/@scrypted/nvr/public/#/"
 host_network: true
 ingress_port: 0
 usb: true
